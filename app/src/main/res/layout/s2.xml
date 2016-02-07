@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:background="@drawable/setup2" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio11"
+        android:text="YES"
+        android:textSize="13pt"
+        android:textColor = "@color/red"
+        android:checked="false"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="44dp"
+        android:buttonTint="@color/red"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton11"
+        android:text="NO"
+        android:textSize="13pt"
+        android:textColor = "@color/red"
+        android:checked="false"
+        android:layout_marginLeft="89dp"
+        android:buttonTint="@color/red"
+        android:layout_alignBottom="@+id/radio11"
+        android:layout_toRightOf="@+id/radio11"
+        android:layout_toEndOf="@+id/radio11"
+        android:layout_marginStart="100dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="59dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:onClick="tos3"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

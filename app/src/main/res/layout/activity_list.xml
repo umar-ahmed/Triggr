@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    xmlns:card="http://schemas.android.com/apk/res-auto" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.25">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:fontFamily="sans-serif-light"
+            android:textSize="60sp"
+            android:text="$0.00"
+            android:id="@+id/textView"
+            android:layout_marginTop="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:id="@+id/button6"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:id="@+id/button7"
+            android:layout_below="@+id/button6"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.75">
+
+        <it.gmariotti.cardslib.library.view.CardListView
+            android:id="@+id/myList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            card:list_card_layout_resourceID="@layout/list_card_thumbnail_layout"
+            style="@style/list_card.thumbnail"/>
+
+    </LinearLayout>
+
+</LinearLayout>
